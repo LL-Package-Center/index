@@ -1,0 +1,248 @@
+{
+    "data": [
+        {
+            "format_version": 100,
+            "name": "liblua",
+            "uuid": "9beb1c11-fad3-43a9-b82c-315fa7565d1f",
+            "version": "5.4.3",
+            "applicable_game_version": "*",
+            "contributors": "Lua",
+            "tags": [
+                "library"
+            ],
+            "depends": [],
+            "conflict": [],
+            "homepage": "9beb1c11-fad3-43a9-b82c-315fa7565d1f",
+            "description":[
+                "Lua dynamic library."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "libnode",
+            "uuid": "da6dd098-2dd7-4605-948a-f7d779aab1c1",
+            "version": "16.16.0.0",
+            "applicable_game_version": "*",
+            "contributors": "NodeJs",
+            "tags": [
+                "library"
+            ],
+            "depends": [],
+            "conflict": [],
+            "homepage": "https://nodejs.org/",
+            "description":[
+                "NodeJs dynamic library."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "libopenssl",
+            "uuid": "4c7b2440-0589-4f2e-85a5-f20fae53ed03",
+            "version": "1.1.1.10",
+            "applicable_game_version": "*",
+            "contributors": "OpenSSL",
+            "tags": [
+                "library"
+            ],
+            "depends": [],
+            "conflict": [],
+            "homepage": "https://www.openssl.org/",
+            "description":[
+                "libcrypto and libssl."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "libopenssl3",
+            "uuid": "d56ddca8-2fe3-4217-b0a5-81911950641d",
+            "version": "3.0.5.0",
+            "applicable_game_version": "*",
+            "contributors": "OpenSSL",
+            "tags": [
+                "library"
+            ],
+            "depends": [],
+            "conflict": [],
+            "homepage": "https://www.openssl.org/",
+            "description":[
+                "libcrypto and libssl."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "libsqlite3",
+            "uuid": "de45ee9c-eccc-45dc-a72e-1bae45d1194a",
+            "version": "3.0",
+            "applicable_game_version": "*",
+            "contributors": "SQLite",
+            "tags": [
+                "library"
+            ],
+            "depends": [],
+            "conflict": [],
+            "homepage": "https://www.sqlite.org/",
+            "description":[
+                "SQLite3 dynamic library."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LiteLoaderBDS",
+            "uuid": "8cb3f98e-db18-4b84-85ca-cbc607cee32f",
+            "version": "2.6.1",
+            "applicable_game_version": ">=1.19.20",
+            "contributors": "LiteLDev",
+            "tags": [],
+            "depends": [
+                ["libopenssl","4c7b2440-0589-4f2e-85a5-f20fae53ed03"],
+                ["libopenssl3","d56ddca8-2fe3-4217-b0a5-81911950641d"],
+                ["libsqlite3","de45ee9c-eccc-45dc-a72e-1bae45d1194a"],
+                ["LL-CrashLogger","35bd9703-d205-47ee-b016-45f7462ba6cd"],
+                ["LLMoney","2814b162-f1f7-41ba-9667-717d81019a6a"],
+                ["LL-ParticleAPI","437952cc-7d52-4be7-b59b-7a739b4c75db"],
+                ["LLPeEditor","a8a1af7d-a4f3-409d-8b2c-b05956cf1a32"],
+                ["LL-PermissionAPI","20f0a6c4-171d-475d-922c-d210211b1b8c"],
+                ["LLPreLoader","5be4fab3-00ae-47bb-89b2-b52157b23eb7"],
+                ["LL-ScriptEngine","40077485-e1a5-41d7-9075-e7f56ada59a1"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "Epoch-making & Cross-language Bedrock Dedicated Servers Plugin Loader."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LL-CrashLogger",
+            "uuid": "35bd9703-d205-47ee-b016-45f7462ba6cd",
+            "version": "1.0.0",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [
+                "debug"
+            ],
+            "depends": [
+                ["LiteLoaderBDS","8cb3f98e-db18-4b84-85ca-cbc607cee32f"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "Generates minidumps and stacktrace information when BDS crashes."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LLMoney",
+            "uuid": "2814b162-f1f7-41ba-9667-717d81019a6a",
+            "version": "2.6.0",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [
+                "economy"
+            ],
+            "depends": [
+                ["LiteLoaderBDS","8cb3f98e-db18-4b84-85ca-cbc607cee32f",">=2.6.0"],
+                ["libsqlite3","de45ee9c-eccc-45dc-a72e-1bae45d1194a"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "A simple economic plugin."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LL-ParticleAPI",
+            "uuid": "437952cc-7d52-4be7-b59b-7a739b4c75db",
+            "version": "2.6.1",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [
+                "particle",
+                "geometry"
+            ],
+            "depends": [
+                ["LiteLoaderBDS","8cb3f98e-db18-4b84-85ca-cbc607cee32f",">=2.6.1"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "Provides particle APIs for drawing lines, surfaces, volumes, and numbers."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LLPeEditor",
+            "uuid": "a8a1af7d-a4f3-409d-8b2c-b05956cf1a32",
+            "version": "1.0.0",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [
+                "PE"
+            ],
+            "depends": [],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "PE editing tool for automatic generation of _mod.exe and export API, etc."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LL-PermissionAPI",
+            "uuid": "20f0a6c4-171d-475d-922c-d210211b1b8c",
+            "version": "2.6.1",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [
+                "Permission",
+                "Management"
+            ],
+            "depends": [
+                ["LiteLoaderBDS","8cb3f98e-db18-4b84-85ca-cbc607cee32f",">=2.6.1"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "Multifunctional player permissions management plugin."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LLPreLoader",
+            "uuid": "5be4fab3-00ae-47bb-89b2-b52157b23eb7",
+            "version": "2.6.1",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [],
+            "depends": [
+                ["LLPeEditor","a8a1af7d-a4f3-409d-8b2c-b05956cf1a32"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "Injector for LiteLoader, which can be used alone."
+            ]
+        },
+        {
+            "format_version": 100,
+            "name": "LL-ScriptEngine",
+            "uuid": "40077485-e1a5-41d7-9075-e7f56ada59a1",
+            "version": "2.6.1",
+            "applicable_game_version": "*",
+            "contributors": "LiteLDev",
+            "tags": [],
+            "depends": [
+                ["LiteLoaderBDS","8cb3f98e-db18-4b84-85ca-cbc607cee32f",">=2.6.1"],
+                ["liblua54","9beb1c11-fad3-43a9-b82c-315fa7565d1f"],
+                ["libnode","da6dd098-2dd7-4605-948a-f7d779aab1c1"],
+                ["libopenssl3","d56ddca8-2fe3-4217-b0a5-81911950641d"]
+            ],
+            "conflict": [],
+            "homepage": "https://www.litebds.com/",
+            "description":[
+                "LiteLoader scripting language adapter, supports JavaScript (NodeJs), Lua, Python (wip)."
+            ]
+        }
+    ]
+}

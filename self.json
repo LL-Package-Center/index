@@ -1,0 +1,33 @@
+{
+    "format_version": 100,
+    "name": "Github Testing Repo",
+    "identifier": "2ae709c3-31c2-41cc-8ced-4686faaabae9",
+    "status": 0,
+    "description": "testing",
+    "root": {
+        "groups": [
+            {
+                "name": "latest",
+                "required_game_version": ">=1.19.20",
+                "classes": [
+                    {
+                        "name": "测试分类",
+                        "list": "test.json",
+                        "description": "",
+                        "updated": 1662263063
+                    }
+                ]
+            }
+        ]
+    },
+    "multi": {
+        "PdbHashTable": {
+            "enable": true,
+            "file": "pdb.json"
+        },
+        "SpeedTest": {
+            "enable": true,
+            "file": "10M.speedtest"
+        }
+    }
+}
